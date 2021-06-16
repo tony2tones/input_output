@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Card } from 'src/app/models/card.model';
 
 @Component({
@@ -7,12 +7,7 @@ import { Card } from 'src/app/models/card.model';
   styleUrls: ['./card.component.css'],
 })
 export class CardComponent {
-  // cardprofile:Card;
   @Input() name: String;
   @Input() job: String;
   @Input() bio: String;
-
-  // name = 'Jonny Doe';
-  // job = 'FrontEnd Gopher';
-  // bio = 'I am a Gopher that likes to FrontEnd Gophe';
 }
