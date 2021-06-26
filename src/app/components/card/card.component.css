@@ -1,12 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 
-.card {  
-  display: contents;
-  padding-right: 10px;
+.container {
   position: absolute;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  max-width: 400px;
-  max-height: 500px;
+  width: 400px;
+  border-radius: 2.5%;
+}
+
+.card {
+  transition: 0.3s;
+  max-width: 100%;
+  max-height: 100%;
   border-radius: 2.5%;
 }
 
@@ -14,14 +22,14 @@
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.headerTile {
+.banner-image {
   height: 250px;
-  width: 100%;
+  /* width: 100%; */
   border-top-left-radius: 2.5%;
   border-top-right-radius: 2.5%;
 }
 
-.headerTile > img {
+.banner-image > img {
   max-width: 100%;
   max-height: 100%;
   border-top-left-radius: 2.5%;
@@ -32,8 +40,8 @@
   position: relative;
   height: 130px;
   border-radius: 50%;
-  left: 29%;
-  bottom: 17%;
+  left: 120px;
+  bottom: 78px;
   background-color: #fff;
   padding: 15px;
 }
@@ -45,11 +53,19 @@
 }
 
 .card-footer {
-  position: relative;
+  width: 306px;
+  margin: 0px auto;
+  /* position: relative; */
   height: 150px;
   padding: 2px 16px;
-  top: -20%;
-  left: 20%;
+  /* top: -20%; */
+  /* left: 20%; */
+}
+.footer {
+  position: relative;
+  margin: 20px;
+  bottom: 80px;
+  padding-left: 45px;
 }
 
 p {
