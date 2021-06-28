@@ -53,11 +53,8 @@
 .card-footer {
   width: 306px;
   margin: 0px auto;
-  /* position: relative; */
   height: 150px;
   padding: 2px 16px;
-  /* top: -20%; */
-  /* left: 20%; */
 }
 .footer {
   position: relative;
@@ -73,9 +70,16 @@
   color: white;
   background-color: rgb(24, 31, 228);
   padding: 10px;
-  bottom: 24px;
+  bottom: 42px;
+}
+.btn:hover{
+ cursor: pointer;
 }
 
 p {
   word-wrap: break-word;
+}
+
+.name,.description {
+  padding:3px;
 }
