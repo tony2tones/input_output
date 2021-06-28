@@ -1,14 +1,14 @@
-<h2>Card</h2>
-
-<div class="card">
-  <div class="headerTile ">
-      <img class="cover" src="../../../assets/images/profilebgimage.PNG">
-</div>
+<div class="container">
+  <div class="card">
+    <div class="banner-image">
+      <img class="cover" src="../../../assets/images/profilebgimage.PNG" />
+    </div>
     <img class="profile" src="../../../assets/images/gopher.PNG" alt="Avatar" />
-    <div class="card-footer">
-      <h4><b>John Doe</b></h4>
-      <p>Architect & Engineer</p>
-      <h4>Bio</h4>
-      <p>I'm a gopher who likes to gophe</p>
+    <div class="footer">
+      <h1 class="name">{{ name }}</h1>
+      <p>{{ job }}</p>
+      <p class="description">{{ bio }}</p>
+    </div>
+    <button class="btn">Follow</button>
   </div>
 </div>

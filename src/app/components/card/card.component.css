@@ -1,3 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 20px;
+}
+
 .card {
   position: absolute;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -5,20 +14,20 @@
   width: 400px;
   height: 500px;
   border-radius: 2.5%;
+  overflow: hidden;
 }
 
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.headerTile {
+.banner-image {
   height: 250px;
-  width: 100%;
   border-top-left-radius: 2.5%;
   border-top-right-radius: 2.5%;
 }
 
-.headerTile > img {
+.banner-image > img {
   max-width: 100%;
   max-height: 100%;
   border-top-left-radius: 2.5%;
@@ -29,8 +38,8 @@
   position: relative;
   height: 130px;
   border-radius: 50%;
-  left: 29%;
-  bottom: 17%;
+  left: 120px;
+  bottom: 78px;
   background-color: #fff;
   padding: 15px;
 }
@@ -42,9 +51,31 @@
 }
 
 .card-footer {
-  position: relative;
+  width: 306px;
+  margin: 0px auto;
+  /* position: relative; */
   height: 150px;
   padding: 2px 16px;
-  top: -20%;
-  left: 20%;
+  /* top: -20%; */
+  /* left: 20%; */
+}
+.footer {
+  position: relative;
+  bottom: 80px;
+  padding-left: 45px;
+}
+
+.btn {
+  position: relative;
+  width: 100%;
+  border: none;
+  font-size: 1rem;
+  color: white;
+  background-color: rgb(24, 31, 228);
+  padding: 10px;
+  bottom: 24px;
+}
+
+p {
+  word-wrap: break-word;
 }
