@@ -1,10 +1,11 @@
 <h1>inputs and outputs</h1>
 <div class="wrapper-grid">
   <div *ngFor="let userProfile of userProfiles">
-    <app-card
+    <app-card-profile
       [name]="userProfile.name"
       [job]="userProfile.job"
       [bio]="userProfile.bio"
-    ></app-card>
+      (btnClick)="parentfunction($event)"
+    ></app-card-profile>
   </div>
 </div>

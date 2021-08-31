@@ -14,8 +14,8 @@
         <p class="description">{{ job }}</p>
         <p class="description">{{ bio }}</p>
       </div>
-      <div class="btn-holder">
-        <button class="btn">Follow</button>
+      <div class="btn-holder" href="#">
+        <button class="btn" (click)="buttonClicked($event)">Follow</button>
       </div>
     </div>
   </div>
