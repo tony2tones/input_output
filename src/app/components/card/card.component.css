@@ -4,17 +4,27 @@
 }
 
 .container {
+  
   padding: 20px;
 }
 
 .card {
-  position: absolute;
+  display: flex;
+  height: 500px;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 2.5%;
+  
+}
+.profile-card {
+  position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   width: 400px;
-  height: 500px;
-  border-radius: 2.5%;
-  overflow: hidden;
+  height: 100%;
+  
+  
 }
 
 .card:hover {
@@ -61,16 +71,23 @@
   bottom: 80px;
   padding-left: 45px;
 }
-
-.btn {
-  position: relative;
-  width: 100%;
-  border: none;
-  font-size: 1rem;
-  color: white;
+.btn-holder{
   background-color: rgb(24, 31, 228);
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom:0px;
+  border-bottom-left-radius: 2.5%;
+  border-bottom-right-radius: 2.5%;
+}
+.btn {
+  border: none;
+  background-color: rgb(24, 31, 228);
+  font-size: 1.3rem;
+  color: white;
   padding: 10px;
   bottom: 42px;
+  
 }
 .btn:hover{
  cursor: pointer;
