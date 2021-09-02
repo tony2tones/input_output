@@ -5,12 +5,12 @@ import { MatIconModule } from '@angular/material/icon';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
-import { CardComponent } from './components/card/card.component';
+import { CardProfileComponent } from './components/card-profile/card.profile.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CardComponent
+    CardProfileComponent
   ],
   imports: [
     BrowserModule,

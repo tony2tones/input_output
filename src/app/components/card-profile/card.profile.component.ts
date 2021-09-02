@@ -1,19 +1,12 @@
-import {
-  Component,
-  EventEmitter,
-  Input,
-  Output,
-  ViewEncapsulation,
-} from '@angular/core';
-import { Card } from 'src/app/models/card.model';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-card-profile',
-  templateUrl: './card.component.html',
-  styleUrls: ['./card.component.css'],
+  templateUrl: './card.profile.component.html',
+  styleUrls: ['./card.profile.component.css'],
   // encapsulation: ViewEncapsulation.None
 })
-export class CardComponent {
+export class CardProfileComponent {
   @Input() name: String;
   @Input() job: String;
   @Input() bio: String;

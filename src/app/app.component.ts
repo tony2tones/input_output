@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Card } from './models/card.model';
+import { CardProfile } from './models/cardProfile.model';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +8,7 @@ import { Card } from './models/card.model';
 })
 export class AppComponent implements OnInit {
   title = 'input-output';
-  userProfiles: Card[] = [];
+  userProfiles: CardProfile[] = [];
   // userProfiles:Card;
 
   // data = [{
@@ -31,7 +31,7 @@ export class AppComponent implements OnInit {
     {
       name: 'Tony Tones',
       job: 'FrontEnd Developer',
-      bio: 'I am a Tony Tones, enjoys footy and I use JavaScript, TypeScript and Angular Framework',
+      bio: 'I am a Tony Tones,I use JavaScript, TypeScript and Angular Framework',
     },
   ];
 
