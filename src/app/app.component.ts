@@ -38,8 +38,4 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.userProfiles = this.data;
   }
-
-  parentfunction($event:string){
-    console.log('event data ', $event);
-  }
 }
