@@ -15,7 +15,7 @@ export class CardProfileComponent {
 
   value = 'the button has been clicked';
 
-  buttonClicked() {
-    this.btnClick.emit(this.value);
+  buttonClicked($event) {
+    this.btnClick.emit($event);
   }
 }
