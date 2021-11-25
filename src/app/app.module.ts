@@ -6,11 +6,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { CardProfileComponent } from './components/card-profile/card.profile.component';
+import { ModalComponent } from './components/modal/modal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CardProfileComponent
+    CardProfileComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
