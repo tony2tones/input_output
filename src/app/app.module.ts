@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { CardProfileComponent } from './components/card-profile/card.profile.component';
+import { MockApiService } from 'src/mocks/mock-api';
 import { ModalComponent } from './components/modal/modal.component';
 
 @NgModule({
@@ -19,7 +20,7 @@ import { ModalComponent } from './components/modal/modal.component';
     BrowserAnimationsModule,
     MatIconModule
   ],
-  providers: [],
+  providers: [MockApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

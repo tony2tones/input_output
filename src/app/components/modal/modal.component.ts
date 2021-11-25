@@ -24,5 +24,5 @@ export class ModalComponent implements OnInit {
       this.closeResult = `Dismissed ${this.name}`;
     });
   }
-
+}
   

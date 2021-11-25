@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MockApiService } from 'src/mocks/mock-api';
 import { CardProfile } from './models/cardProfile.model';
 
 @Component({
@@ -8,35 +9,17 @@ import { CardProfile } from './models/cardProfile.model';
 })
 export class AppComponent implements OnInit {
   title = 'input-output';
-  userProfiles: CardProfile[] = [];
+  userProfiles: CardProfile;
   // userProfiles:Card;
 
-  // data = [{
-  //       name: 'Jonny Doe',
-  //       job: 'FrontEnd Gopher',
-  //       bio: 'I am a Gopher that likes to FrontEnd Gophe',
-  //     }]
+  constructor(private apiService : MockApiService) {}
 
-  data = [
-    {
-      name: 'Jonny Doe',
-      job: 'FrontEnd Gopher',
-      bio: 'I am a Gopher that likes to FrontEnd Gophe',
-    },
-    {
-      name: 'John Dear',
-      job: 'Dear FrontEnd',
-      bio: 'I am a Dear that likes to dearly FrontEnd',
-    },
-    {
-      name: 'Tony Tones',
-      job: 'FrontEnd Developer',
-      bio: 'I am a Tony Tones,I use JavaScript, TypeScript and Angular Framework',
-    },
-  ];
+  
 
   ngOnInit() {
-    this.userProfiles = this.data;
+    this.apiService.getData().subscribe((data:CardProfile)=> {
+      this.userProfiles = data;
+    });
   }
 
   parentfunction($event:string){
