@@ -9,17 +9,16 @@ import { CardProfile } from './models/cardProfile.model';
 })
 export class AppComponent implements OnInit {
   title = 'input-output';
-  userProfiles: CardProfile;
-  // userProfiles:Card;
+  userProfiles: CardProfile[] = [];
 
-  constructor(private apiService : MockApiService) {}
-
-  
+  constructor(private mockService: MockApiService) {}
+ 
 
   ngOnInit() {
-    this.apiService.getData().subscribe((data:CardProfile)=> {
-      this.userProfiles = data;
-    });
+    this.mockService.getData().subscribe((data:CardProfile[]) => {
+      this.userProfiles =  data;
+
+    })
   }
 
   parentfunction($event:string){
