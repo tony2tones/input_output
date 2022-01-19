@@ -10,11 +10,11 @@
         alt="Avatar"
       />
       <div class="footer">
-        <h1 class="name">{{ name }}</h1>
-        <p class="description">{{ job }}</p>
-        <p class="description">{{ bio }}</p>
+        <h1 class="name">{{ userProfile.name }}</h1>
+        <p class="description">{{ userProfile.job }}</p>
+        <p class="description">{{ userProfile.bio }}</p>
       </div>
-      <div class="btn-holder" href="#" (click)="buttonClicked(name)">
+      <div class="btn-holder" href="#" (click)="buttonClicked(userProfile)">
         <button class="btn" >Follow</button>
       </div>
     </div>

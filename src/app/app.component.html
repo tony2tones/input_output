@@ -2,10 +2,11 @@
 <div class="wrapper-grid">
   <div *ngFor="let userProfile of userProfiles">
     <app-card-profile
+      [userProfile]="userProfile"
       [name]="userProfile.name"
       [job]="userProfile.job"
       [bio]="userProfile.bio"
-      (btnClick)="parentfunction($event)"
+      (selectedProfile)="parentfunction(userProfile)"
     ></app-card-profile>
   </div>
 </div>

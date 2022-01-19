@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { CardProfile } from 'src/app/models/cardProfile.model';
 
 @Component({
   selector: 'app-card-profile',
@@ -6,13 +7,11 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrls: ['./card.profile.component.css'],
 })
 export class CardProfileComponent {
-  @Input() name: String;
-  @Input() job: String;
-  @Input() bio: String;
+  @Input() userProfile: CardProfile;
 
-  @Output() btnClick = new EventEmitter<string>();
+  @Output() selectedProfile = new EventEmitter<Object>();
 
-  buttonClicked($event) {
-    this.btnClick.emit($event);
+  buttonClicked(userProfile: CardProfile) {
+    this.selectedProfile.emit(userProfile);
   }
 }

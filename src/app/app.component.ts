@@ -13,18 +13,18 @@ export class AppComponent implements OnInit {
   title = 'input-output';
   userProfiles: CardProfile;
 
-  constructor(private apiService : MockApiService, private modalService : NgbModal) { }
+  constructor(private apiService: MockApiService, private modalService: NgbModal) { }
 
   ngOnInit() {
-    this.apiService.getData().subscribe((data:CardProfile)=> {
-      this.userProfiles = data;
+    this.apiService.getData().subscribe((profiles: CardProfile) => {
+      this.userProfiles = profiles;
     });
   }
 
-  parentfunction($event:string){
-    const modalReff = this.modalService.open(ModalComponent, {size: 'sm'});
+  parentfunction(userProfile:CardProfile) {
+    const modalReff = this.modalService.open(ModalComponent, { size: 'sm' });
     const componentInstance = modalReff.componentInstance as ModalComponent;
 
-    componentInstance.name = $event;
+    componentInstance.userProfile = userProfile
   }
 }

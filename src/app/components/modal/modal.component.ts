@@ -1,12 +1,13 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { CardProfile } from 'src/app/models/cardProfile.model';
 @Component({
   selector: 'app-modal',
   templateUrl: './modal.component.html',
   styleUrls: ['./modal.component.css']
 })
 export class ModalComponent implements OnInit {
-  @Input() name: String;
+  @Input() userProfile: CardProfile;
   // @Input() job: String;
   // @Input() bio: String;
   closeResult: string;
@@ -17,11 +18,11 @@ export class ModalComponent implements OnInit {
 
   }
 
-  open(content) {
-    this.modalService.open(content, { ariaLabelledBy: 'modal-basic-title' }).result.then((result) => {
+  open(userProfile:CardProfile) {
+    this.modalService.open(userProfile, { ariaLabelledBy: 'modal-basic-title' }).result.then((result) => {
       this.closeResult = `Closed with: ${result}`;
     }, (reason) => {
-      this.closeResult = `Dismissed ${this.name}`;
+      this.closeResult = `Dismissed ${this.userProfile.name}`;
     });
   }
 }
